@@ -1,0 +1,167 @@
+.navbar {
+    min-height: 80px;
+    background-color: #004c7f
+  }
+  .nav-link{
+    border-radius: 0rem;
+    border-bottom: 1px solid #e0e0e0;
+    height: 70px;
+  }
+  .nav-pills .nav-link {
+    border-radius: 0rem;
+    padding: 20px;
+    color: #004c7f;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #004c7f;
+    background-color: white;
+    border-left: 6px solid #004c7f;
+    height: auto;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 14px;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ .sidebar{
+    border-right: 1px solid #e0e0e0;
+ }
+
+ .side-menu-header{
+    height: 70px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #616161;
+    border-bottom: 1px solid #e0e0e0;
+ }
+
+ .text {
+    color: #616161;
+ }
+ .count{
+     float: right;
+     padding-right: 10px;
+ }
+
+ .date{
+     padding: 20px;
+ }
+.icon{
+    font-size:2rem;
+    
+}
+
+.today {
+    color: #616161;
+    font-size:2rem;
+ }
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 3.95em;
+  margin-top: 1.2em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.50em; height: 1.50em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+  margin-top: 0.5em;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '\2713\0020';
+  position: absolute;
+  top: .15em; left: .22em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all .2s;
+  font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+  margin-top: 0.5em;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #4778d9!important;
+}
+
+.btn-primary{
+    background-color: #004c7f ;
+    border-color: #004c7f ;
+}
+
+.btn-status{
+    margin-top: 20px;
+}
+
+.btn-default{
+    border: 2px solid #004c7f!important;
+    background-color: #fff;
+    margin: 10% 30%;
+    color: #004c7f;
+}
+
+th{
+    color: #004c7f;
+}
+
+.container-fluid{
+    height: 100%;
+}
+
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }

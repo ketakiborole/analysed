@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./index.css">
+
+  <title>Analysed</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="./images/logo.png" width="150" height="50" alt="">
+    </a>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 nopadding sidebar">
+        <h5 class="side-menu-header">Complaints Tickets</h5>
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+            aria-controls="v-pills-home" aria-selected="true">Unassigned <span class="count">9</span> </a>
+          <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+            aria-controls="v-pills-profile" aria-selected="false">Pending <span class="count">5</span></a>
+          <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+            aria-controls="v-pills-messages" aria-selected="false">Follow Up <span class="count">8</span></a>
+          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+            aria-controls="v-pills-settings" aria-selected="false">Closed <span class="count">210</span></a>
+        </div>
+        <button type="button" class="btn btn-default">+ Create Tickets</button>
+      </div>
+      <div class="col-md-9">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+            <div class="date">
+              <i class="far fa-calendar-alt icon"></i> <span class="today text"><b>Today:</b> <span
+                  id="today"></span></span>
+
+            </div>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th style="width:30%">CUSTOMER NAME</th>
+                    <th style="width:90%">MESSAGE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+
+                      <input type="checkbox" id="checkbox1">
+                      <label for="checkbox1">
+                        <b>John K. Smith </b><br>
+                        <i>assigned:Kevin</i>
+                      </label>
+                      <div class="float-right btn-status">
+                        <button type="button" class="btn btn-primary">PENDING</button>
+                      </div>
+
+                    </td>
+                    <td><b>Lorem Ipsum is simply dummy text of the printing and typesetting industry</b>
+                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet purus id
+                        metus vulputate dapibus finibus vulputate turpis.</p>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" id="checkbox2">
+                      <label for="checkbox2">
+                        <b> Rachel Smith </b><br>
+                        <i>assigned:Susan</i>
+                      </label>
+                      <div class="float-right btn-status">
+                        <button type="button" class="btn btn-primary">PENDING</button>
+                      </div>
+                    </td>
+                    <td><b>Lorem Ipsum is simply dummy text of the printing and typesetting industry</b>
+                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet purus id
+                        metus vulputate dapibus finibus vulputate turpis.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" id="checkbox3">
+                      <label for="checkbox3">
+                        <b>Sandeep Pagare</b> <br>
+                        <i>unassigned</i>
+                      </label>
+                      <div class="float-right btn-status">
+                        <button type="button" class="btn btn-primary">PENDING</button>
+                      </div>
+                    </td>
+                    <td><b>Lorem Ipsum is simply dummy text of the printing and typesetting industry</b>
+                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet purus id
+                        metus vulputate dapibus finibus vulputate turpis.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...
+          </div>
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...
+          </div>
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script>
+    var today = document.getElementById("today");
+    var d = new Date();
+    today.innerHTML = d.toDateString();
+  </script>
+</body>
+
+</html>
